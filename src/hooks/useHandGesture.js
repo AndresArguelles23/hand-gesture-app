@@ -125,7 +125,7 @@ export function useHandGesture(videoRef, canvasRef) {
     if (!canvas || !video) return
 
     // Sync canvas pixel dimensions to actual video resolution every frame.
-    // Assigning width/height also clears the canvas automatically.
+    // Assigning width/height aAlso clears the canvas automatically.
     const W = video.videoWidth  || 640
     const H = video.videoHeight || 480
     canvas.width  = W
